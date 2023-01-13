@@ -1,4 +1,4 @@
-document.querySelector('.calculate').addEventListener('click', function () {
+function calculator() {
 	const num1 = parseFloat(document.querySelector('[name="num1"]'). value);
 	const num2 = parseFloat(document.querySelector('[name="num2"]'). value);
 	const operation = document.querySelector('[name="operation"]'). value;
@@ -18,4 +18,19 @@ document.querySelector('.calculate').addEventListener('click', function () {
 	}
 	
 	document.querySelector('.calc-result').innerText = result;
+}
+document.querySelector('.calculate').addEventListener('click', function () {
+	calculator();
+});
+
+document.querySelector('[name="operation"]').addEventListener('change', function () {
+	calculator();
+});
+
+document.querySelector('[name="num1"]').addEventListener('change', function () {
+	calculator();
+});
+
+document.querySelector('[name="num2"]').addEventListener('input', function () {
+	calculator();
 });
