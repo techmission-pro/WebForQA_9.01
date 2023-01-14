@@ -1243,4 +1243,33 @@
 	font-weight: bold;
     text-shadow: 2px 2px red;
 	}
+	
+.div-block-12 {
+	flex-direction: row-reverse;
+}
 
+.text-block-9 {
+	padding-left: 15px;
+}
+
+.emoji {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+}
+
+.navigation {
+	position: fixed;
+}
+
+body {
+	padding-top: 93px;
+}
+
+.div-block-6:nth-child(2n) {
+	background-color: grey;
+}
+
+.div-block-6:nth-child(2n) .text-block-5 {
+	color: blue;
+}
