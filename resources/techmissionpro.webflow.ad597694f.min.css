@@ -22643,3 +22643,5 @@ p {
         text-align: center
     }
 }
+	.div-block-6:nth-child(2n) {background-color:#889;}
+	.div-block-6:nth-child(2n) .text-block-5  {color:blue;}
