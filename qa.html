@@ -398,7 +398,13 @@
         <div class="div-block-26">
             <div class="div-block-27" id="scroll-block">
                 <input id="num1" class="cals"/>
-				<p>+</p>
+                <select id="operation">
+                    <option value="plus">+</option>
+                    <option value="minus">-</option>
+                    <option value="multiply">*</option>
+                    <option value="divide">/</option>
+                </select>
+				
 				<input id="num2" class="cals2"/>
 				<button onclick="func()">=</button>
 										
@@ -408,8 +414,17 @@
 				  function func(){
 				       var num1 = Number(document.getElementById("num1").value);
 					   var num2 = Number(document.getElementById("num2").value);
-					   var result = num1 + num2;
-					   
+					   var operation=document.getElementById("operation").value
+					   var result;
+					   if (operation == "plus"){
+					      result = num1 + num2;
+						}else if (operation == "minus"){
+					      result = num1 - num2;
+						}else if (operation == "multiply"){
+					      result = num1 * num2;
+						}else if(operation == "divide"){
+					      result = num1 / num2;
+						}						
 					   document.getElementsByClassName("result")[0].value = result;
 					   }
 				</script>
