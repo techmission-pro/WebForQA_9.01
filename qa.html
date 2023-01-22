@@ -397,8 +397,41 @@
                 class="text-span-4 text-span-2">освоїти нову професію</span></h3></div>
         <div class="div-block-26">
             <div class="div-block-27" id="scroll-block">
-                <div class="w-embed">
-                </div>
+                <input id="num1" class="cals"/>
+				<p>+</p>
+				<input id="num2" class="cals2"/>
+				<button onclick="func()">=</button>
+										
+				<p id="result"></p>
+											
+				<script>
+				  function func(){
+				       var num1 = Number(document.getElementById("num1").value);
+					   var num2 = Number(document.getElementById("num2").value);
+					   var result = num1 + num2;
+					   
+					   document.getElementsByClassName("result")[0].value = result;
+					   }
+				</script>
+				
+				<input type="text" readonly class="result"/>
+                <style>
+                    .cals {
+                    width: 60px;
+                    border-radius: 25% 10%;
+                    }
+                    .cals2 {
+                    width: 60px;
+                    border-radius: 25% 10%;
+                    }
+                    .result {
+                    width: 60px;
+                    border-radius: 25% 10%;
+                    }
+                    </style>
+                
+             <div class="w-embed">
+             </div>
             </div>
             <div><img alt="QA" loading="lazy" src="resources/images/worker.png"></div>
         </div>
