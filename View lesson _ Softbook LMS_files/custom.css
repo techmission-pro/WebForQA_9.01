@@ -1,0 +1,302 @@
+#tsparticles {
+    z-index: 1060 !important;
+}
+
+.ecommerce-application .product-color-options .selected .b-dark {
+    border-color: #4B4B4B
+}
+
+.ecommerce-application .product-color-options .selected .b-secondary {
+    border-color: #82868B
+}
+
+
+.selected_card {
+    background: #7367f01f;
+    outline: 1px solid #7367F0;
+}
+
+#tsparticles canvas {
+    display: block;
+    vertical-align: bottom;
+    background-color: rgba(35, 35, 35, 0.5) !important;
+}
+
+#tsparticles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10010;
+}
+
+
+.card-congratulations {
+    background: -webkit-linear-gradient(118deg, #f7fdff, rgb(230 248 255));
+    background: linear-gradient(118deg, #f7fdff, rgb(230 248 255));
+}
+
+
+#hellopreloader_preload {
+    display: block;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    background: #fff url(/assets/images/oval.svg) center center no-repeat;
+    background-size: 50px;
+}
+
+
+.promo_popup {
+    border-radius: 4px;
+    bottom: 24px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+    padding: 0;
+    position: fixed;
+    right: 24px;
+    text-align: left;
+    text-decoration: inherit;
+    transition: right 1.5s;
+    width: 400px;
+    height: 300px;
+    z-index: 50;
+    overflow: hidden;
+    display: none;
+}
+
+.promo_popup.show {
+    display: block;
+}
+
+.promo_popup span {
+    display: block;
+}
+
+.promo_popup .promo_close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.promo_popup .promo_close .promo_close_cross {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 32px;
+    height: 32px;
+    border: 8px solid transparent;
+}
+
+.promo_popup .promo_close .promo_close_cross:after,
+.promo_popup .promo_close .promo_close_cross:before {
+    background: #221F1F;
+    content: '';
+    height: 2px;
+    left: 0;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.promo_popup .promo_close .promo_close_cross:after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(-45deg);
+}
+
+.promo_popup .promo_close .promo_close_cross:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.promo_popup .promo_close .promo_close_cross:hover:after,
+.promo_popup .promo_close .promo_close_cross:hover:before {
+    background: #F84147;
+}
+
+.promo_btn {
+    margin-top: 16px;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+}
+
+@media screen and (max-width: 442px) {
+    .promo_popup {
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+        right: 0;
+        left: 0px;
+        bottom: 0;
+    }
+}
+
+
+#progressbar_lesson li {
+    width: 33%;
+}
+
+.hometask_element_box, .homework_element {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.checkout_page .checkout_header {
+    background: #333;
+}
+
+.checkout_page .alert_cost {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.course_view_mode:hover {
+    cursor: pointer;
+}
+
+
+.offcanvas-bottom_10 {
+    height: 100px;
+}
+
+.str_description_limit_2, .str_limit_2 {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    height: 55px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+.str_description_limit_4 {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 80px;
+    min-height: 80px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.container_for_select_attachment_answer {
+    position: relative;
+}
+
+.attach_file_in_testing_question {
+    position: relative;
+}
+
+
+.testing_delete_attachment_in_answer {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+
+.testing_delete_attachment_in_question {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+
+.ql-editor {
+    color: #333;
+}
+
+.ql-editor blockquote {
+    border-left: 4px solid #ccc;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 16px;
+}
+
+
+.dark-layout p, .dark-layout span {
+    color: #D0D2D6 !important;
+}
+
+
+.loginPage a.brand-logo img {
+    width: 140px;
+    height: 40px;
+}
+
+
+.courses-grid.list-view .course_line {
+    display: grid;
+    grid-template-columns: .75fr 5fr 1fr 1fr 2.5fr .25fr;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.courses-grid.list-view .dropdown {
+    width: 20px;
+    height: 20px;
+}
+
+#sendHomeworkForm .ql-editor {
+    white-space: inherit !important;
+    margin-bottom: 1.3rem !important;
+}
+
+.accessBlock .openAccess {
+    color: #27c76f !important;
+}
+
+.accessBlock .blockedAccess {
+    color: #ea5354 !important;
+}
+
+.lessonAccessData {
+    position: absolute;
+    right: 100px;
+}
+
+.cursor-pointer-remove:hover {
+    cursor: default !important;
+}
+
+.text_end_cut.teacher_courses {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    padding-right: 30px;
+}
+
+.text_end_cut.lessons_tree_in_lesson {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    padding-right: 30px;
+}
+
+html .content .content-wrapper .content-header-title {
+    border: none !important;
+}

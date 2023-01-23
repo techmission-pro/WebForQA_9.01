@@ -1,0 +1,174 @@
+$( document ).ready(function() {
+
+    var res = $(".sb_bar_user_content");
+    $(".sb_bar_user_btn").on("click", funk);
+
+    $(document).click(function(e) {
+        if ($(e.target).closest(res).length || $(e.target).closest('.sb_bar_user_btn').length) return;
+        res.fadeOut(100).removeClass("show");
+        e.stopPropagation();
+    });
+
+    function funk(){
+        if(res.css("display") == "none"){
+            res.fadeIn(100);
+            res.addClass("show")
+        }
+        else{
+            res.fadeOut(100);
+            res.removeClass("show")
+        }
+    }
+
+
+    var res_menu = $(".sb_bar_menu_content");
+    $(".sb_bar_menu_btn").on("click", funk_menu);
+
+    $(document).click(function(e) {
+        if ($(e.target).closest(res_menu).length || $(e.target).closest('.sb_bar_menu_btn').length) return;
+        res_menu.fadeOut(100).removeClass("show");
+        e.stopPropagation();
+    });
+
+    function funk_menu(){
+        if(res_menu.css("display") == "none"){
+            res_menu.fadeIn(100);
+            res_menu.addClass("show")
+        }
+        else{
+            res_menu.fadeOut(100);
+            res_menu.removeClass("show")
+        }
+    }
+
+
+    var res_lang = $(".sb_bar_lang_content");
+    var btn_lang = $(".sb_bar_lang_btn");
+    btn_lang.on("click", funk_lang);
+
+    $(document).click(function(e) {
+        if ($(e.target).closest(res_lang).length || $(e.target).closest('.sb_bar_lang_btn').length) return;
+        res_lang.fadeOut(100).removeClass("show");
+        btn_lang.removeClass("show");
+        e.stopPropagation();
+    });
+
+    function funk_lang(){
+        if(res_lang.css("display") == "none"){
+            res_lang.fadeIn(100);
+            res_lang.addClass("show")
+            btn_lang.addClass("show")
+        }
+        else{
+            res_lang.fadeOut(100);
+            res_lang.removeClass("show")
+            btn_lang.removeClass("show")
+        }
+    }
+
+
+    var res_help = $(".sb_bar_help_content");
+    var btn_help = $(".sb_bar_help_btn");
+    btn_help.on("click", funk_help);
+
+    $(document).click(function(e) {
+        if ($(e.target).closest(res_help).length || $(e.target).closest('.sb_bar_help_btn').length) return;
+        res_help.fadeOut(100).removeClass("show");
+        btn_help.removeClass("show");
+        e.stopPropagation();
+    });
+
+    function funk_help(){
+        if(res_help.css("display") == "none"){
+            res_help.fadeIn(100);
+            res_help.addClass("show")
+            btn_help.addClass("show")
+        }
+        else{
+            res_help.fadeOut(100);
+            res_help.removeClass("show")
+            btn_help.removeClass("show")
+        }
+    }
+
+
+    function sendAjax(data, callback){
+        return  $.ajax({
+            type: 'post',
+            url: data.url,
+            data: data.data,
+            cache: false
+        }).done(callback)
+    }
+
+    
+    $("#sb_bar_user_moon").click(function () {
+        let data = {
+            data:{
+                globalThemeValue: "dark"
+            },
+            url: '/'
+        };
+        sendAjax(data, function(successData) {});
+        $('html').removeClass("light-layout");
+        $('html').addClass("dark-layout");
+        $('body').removeClass("light-layout");
+        $('body').addClass("dark-layout");
+        $("#sb_bar_user_moon").addClass('d-none');
+        $("#sb_bar_user_sun").removeClass('d-none');
+        console.log("set dark theme");
+    });
+
+    $("#sb_bar_user_sun").click(function () {
+        let data = {
+            data:{
+                globalThemeValue: "light"
+            },
+            url: '/'
+        };
+        sendAjax(data, function(successData) {});
+        $('html').removeClass("dark-layout");
+        $('html').addClass("light-layout");
+        $('body').removeClass("dark-layout");
+        $('body').addClass("light-layout");
+        $("#sb_bar_user_moon").removeClass('d-none');
+        $("#sb_bar_user_sun").addClass('d-none');
+        console.log("set light theme");
+    });
+
+
+
+
+    function insertVarsInTemplate(text, arrayData){
+        var chunks = text.split(/({{[a-z.]+}})/g);
+        var chunksTranslated = chunks.map(function(chunk){
+            if(chunk.slice(0,2)==="{{" && chunk.slice(-2)==="}}") {
+                var id = chunk.slice(2,-2);
+                return arrayData[id];
+            }
+            return chunk;
+
+        });
+        return chunksTranslated.join("");
+    }
+
+
+
+
+
+    $(".sb_bar_lang_inbox_item").click(function () {
+        var lang = $(this).data("language");
+        $("#sb_bar_lang_form_hidden_input").val(lang);
+        $("#sb_bar_lang_form").submit();
+    });
+
+
+
+
+
+});
+
+
+
+
+
