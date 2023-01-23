@@ -1,6 +1,16 @@
 .div-block-12 {
-			flex-direction: row-reverse; 
-		}
+	flex-direction: row-reverse; 
+}
 .div-block-12 .text-block-9 {
-			padding-left: 15px;
-		}
+	padding-left: 15px;
+}
+.emoji {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	
+	width: 28px;
+    height: 30px;
+	object-fit: contain
+}
+	
