@@ -13,4 +13,9 @@
     height: 30px;
 	object-fit: contain
 }
-	
+.navigation {
+	position: fixed;
+}
+body {
+	padding-top: 93px;
+}
