@@ -1,0 +1,25 @@
+.div-block-12 {
+     flex-direction: row-reverse;
+     }
+     .text-block-9 {
+       	padding-left: 20px;
+}
+
+.emoji {
+     display: inline-block;
+     width: 1em;
+     height: 1em;
+}
+
+.navigation {
+     position: fixed;
+}
+
+.div-block-6:nth-child(2n) {
+     background-color: rgb(67, 64, 64);
+     color: blue;
+}
+
+.div-block-6:nth-child(2n) .text-block-5 {
+     color: blue;
+}
