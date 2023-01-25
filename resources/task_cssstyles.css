@@ -25,6 +25,19 @@ body {
 .div-block-6:nth-child(2n) .text-block-5 {
 	color: blue;
 }
-
-
+.calc-input {
+	text-align: center;
+	background-color: lightgrey;
+	width: 100px;
+	height: 30px;
+}
+.calc-calculate {
+	font-weight: bold;
+	font-size: 21px;
+}
+.calc-result {
+	font-weight: bold;
+	color: blue;
+	font-size: 18px;
+}
 	
