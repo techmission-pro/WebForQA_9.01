@@ -48,9 +48,13 @@
             height: 1em)
     </style>
 </head>
-<body>
+<body style="
+    padding-top: 93px;">
 <div class="navigation w-nav" data-animation="default" data-collapse="medium" data-duration="400"
      data-easing="ease" data-easing2="ease" role="banner">
+    <style="
+           position: fixed;
+           "></style>
     <div class="container w-container">
         <div class="div-block-20 qa1"><a aria-current="page" class="link-block-7 w-inline-block w--current"
                                          href="https://www.techmission.pro/web-qa">
@@ -398,7 +402,12 @@
                 class="text-span-4 text-span-2">освоїти нову професію</span></h3></div>
         <div class="div-block-26">
             <div class="div-block-27" id="scroll-block">
-                <div class="w-embed">
+                <div class="calc">
+                    <input type="text" name="nam1" class="calc-input" />
+                    +
+                    <input type="text" name="nam2" class="calc-input" />
+                    <button type="button" class="calc-calculate">=</button>
+                    <span class="calc-result"></span>
                 </div>
             </div>
             <div><img alt="QA" loading="lazy" src="resources/images/worker.png"></div>
@@ -421,6 +430,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 
 <!-- test comment -->
-
+<script src="./resources/calc.js"></script>
 </body>
 </html>
