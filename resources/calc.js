@@ -18,16 +18,16 @@ function calculate() {
   document.querySelector('.calc-result').value=result;
 }
 	
-document.querySelector ('.calc-calculate').addEventListener('click'function() {
+document.querySelector ('.calc-calculate').addEventListener('click',function() {
 	calculate();
 });
-document.querySelector ('[name="op"]').addEventListener('change'function() {
+document.querySelector ('[name="op"]').addEventListener('change',function() {
 	calculate();
 });
 
-document.querySelector ('[name="num1"]').addEventListener('input'function() {
+document.querySelector ('[name="num1"]').addEventListener('input',function() {
 	calculate();
 });
-document.querySelector ('[name="num2"]').addEventListener('input'function() {
+document.querySelector ('[name="num2"]').addEventListener('input',function() {
 	calculate();
 })
