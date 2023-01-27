@@ -23,3 +23,10 @@
 .div-block-6:nth-child(2n) .text-block-5 {
      color: blue;
 }
+
+/*calc*/
+.calc-input {
+     text-align: center;
+     width: 60px;
+     color: black;
+}
