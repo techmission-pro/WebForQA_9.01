@@ -1,0 +1,34 @@
+.div-block-12{
+    flex-direction: row-reverse;
+}
+
+.text-block-9{
+ padding-left: 25px;
+}
+
+.emoji-style{
+   display: inline-block;
+   height: 24px;
+   width: 16px;
+   object-fit: contain;
+}
+
+.navigation{
+    position: fixed;
+}
+
+body{
+    margin-top: 93px;
+}
+
+.div-block-6:nth-child(2n){
+    background-color: rgb(136, 136, 136);
+}
+
+.div-block-6:nth-child(2n) .text-block-5{
+color: blue;
+}
+
+.div-block-6:nth-child(3n) .text-block-5{
+    color: rgb(0, 255, 149);
+    }
