@@ -3083,6 +3083,14 @@ p {
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, .1)
+    
+}
+.div-block-6:nth-child(2n) {
+    background-color: grey;
+    color: blue;
+}
+.div-block-6:nth-child(2n) .text-block-5 {
+    color: blue;
 }
 
 .div-block-7 {
