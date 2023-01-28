@@ -27,6 +27,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
             type="text/javascript"></script><![endif]-->
 
+    
     <script type="text/javascript">!function (o, c) {
         var n = c.documentElement, t = " w-mod-";
         n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
@@ -67,6 +68,7 @@
 </head>
 <body style="padding-top: 93px;"> <!-- fixing position of the header --> 
 <!-- test comment --> 
+
 
 
 <div class="navigation w-nav" data-animation="default" data-collapse="medium" data-duration="400"
@@ -437,8 +439,18 @@
                 class="text-span-4 text-span-2">освоїти нову професію</span></h3></div>
         <div class="div-block-26">
             <div class="div-block-27" id="scroll-block">
-                <div class="w-embed">
+                
+
+                <div class="calc">
+                	<input type="text" name="num1" class="calc-input" >
+                	+
+                	<input type="text" name="num2" class="calc-input">
+                	<button type="button" class="calc-calculate">=</button>
+                	<!--<span class="calc-result"></span>-->
+                	<input type="text" readonly class="calc-input calc-result">
                 </div>
+
+
             </div>
             <div><img alt="QA" loading="lazy" src="resources/images/worker.png"></div>
         </div>
@@ -458,8 +470,14 @@
 <script src="resources/webflow.3ae7eb135.js" type="text/javascript"></script>
 <!--[if lte IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
-
+<script src="./resources/calc.js"></script> <!-- JS file connection -->
 <!-- test comment -->
+<style>
+	.calc-input{
+		width: 80px; 
+		text-align: center;
+	}
+</style>
 
 </body>
 </html>
