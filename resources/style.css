@@ -32,3 +32,44 @@ color: blue;
 .div-block-6:nth-child(3n) .text-block-5{
     color: rgb(0, 255, 149);
     }
+
+
+.calc{
+
+}
+
+.calc-button{
+    font-weight: 900;
+    color: rgb(107, 105, 105);
+    border: 1px solid rgba(12, 12, 12, 0.1);
+    border-radius: 8px
+}
+
+.calc-input{
+    width: 145px;
+    text-align: center;
+    font-weight: 900;
+    border: 1px solid rgba(12, 12, 12, 0.1);
+    border-radius: 8px;
+    box-shadow: 1px 1px 20px 0 #4b699c;
+
+}
+
+.calc-operation{
+    border: 1px solid rgba(12, 12, 12, 0.1);
+    border-radius: 8px
+}
+
+.calc-option{
+    text-align: center;
+    font-weight: 900;
+}
+
+.calc-operator{
+    border: 1px solid rgba(12, 12, 12, 0.1);
+    border-radius: 8px
+}
+
+.div-block-27{
+    box-shadow: 1px 1px 20px 0 #4b699c;
+}
