@@ -4,4 +4,3 @@ document.querySelector('.calc-calculate'). addEventListener('click' function () 
 	const sum = num1 + num2;
 	document.querySelector('.calc-result').innerText = sum;
 });
-
