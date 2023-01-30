@@ -18,10 +18,10 @@ function calculate() {
         alert('Wrong operation is selected');
     }
 
-    document.querySelector('.calc=result').value = result;
+    document.querySelector('.calc-result').value = result;
 }
 
-document.querySelector('.calc=calculate').addEventListener('click', function () {
+document.querySelector('.calc-calculate').addEventListener('click', function () {
     calculate();
 });
 
