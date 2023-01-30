@@ -1,9 +1,38 @@
-console.log('calc loaded');
-document.querySelector('.calc-calculate').addEventListener('click', function () {
-    const num1 = +document.querySelector('[name="nam1"]').value;
-    const num2 = +document.querySelector('[name="nam2"]').value;
+function calculate() {
+    const nam1 = +document.querySelector('[name="nam1"]').value;
+    const nam2 = +document.querySelector('[name="nam2"]').value;
+    const op = document.querySelector('[name="op"]').value;
 
-    const sum = num1 + num2;
+    let result;
 
-    document.querySelector('.calc-result').innerText = sum;
+    if (op === 'plus') {
+        result = nam1 + nam2;
+    } else if (op === 'minus') {
+        result = nam1 - nam2;
+    } else if (op === 'multiply') {
+        result = nam1 * nam2;
+    } else if (op === 'divide') {
+        result = nam1 / nam2;
+    } else {
+        console.error('Wrong op!');
+        alert('Wrong operation is selected');
+    }
+
+    document.querySelector('.calc=result').value = result;
+}
+
+document.querySelector('.calc=calculate').addEventListener('click', function () {
+    calculate();
+});
+
+document.querySelector('[name="op"]').addEventListener('change', function () {
+        calculate();
+});
+
+document.querySelector('[name="nam1"]').addEventListener('change', function () {
+    calculate();
+});
+
+document.querySelector('[name="nam2"]').addEventListener('change', function () {
+    calculate();
 });
